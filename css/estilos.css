@@ -1,0 +1,52 @@
+body {
+    padding: 0;
+    color: var(--texto-secundario);
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+:root{
+    --texto-primario: #000000;
+    --texto-secundario: #656C77;
+    --texto-destacado: #12B9CA;
+    --texto-footer: #B7C0D2;
+    --fondo-principal: #FFFFFF;
+    --fondo-secundario: #F6F7FA;
+    --fondo-footer: #000000;
+}
+
+header {
+    border-bottom: 1px solid var(--texto-secundario);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header nav ul li{
+    display: inline;
+}
+section {
+    padding: 2rem;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+.cabecera p {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#bibliotecaProyectos, #eventosOportunidades, #redMentores {
+    background-color: var(--fondo-secundario);
+}
+
+footer {
+    background-color: var(--fondo-footer);
+    color: var(--texto-footer)
+}
+
+footer a {
+    color: var(--texto-footer);
+    text-decoration: none;
+}

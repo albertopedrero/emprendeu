@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmprendeU - De la idea al demo day</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="saltarNavegacion">Saltar navegación</div>
+    <header>
+        <div class="logo">EmprendeU <span>de la idea al demo day</span></div>
+        <div>
+            <nav aria-label="Principal">
+                <ul>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Recursos</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Mentores</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p>Juan Estudiante 
+                <span class="universidad">UPSA - Ingeniería</span>
+                <span class="catetgoria">Emprendedor Activo</span></p>
+        </div>
+    </header>
+    <main id="principal">
+        <section class="explicacion">
+            <div>
+                <h1>Transforma tu <span>idea</span> en tu próximo <span>éxito</span></h1>
+                <p>
+                    Conecta con la comunidad emprendedora universitaria de Castilla y León. Encuentra mentores, colabora en proyectos y lleva tu startup desde la idea hasta el demo day con resultados reales.
+                </p>
+                <button>Comenzar gratis</button>
+            
+                <div class="datosGenerales">
+                    <ul>
+                        <li>1.420 estudiantes de CyL</li>
+                        <li>87 startups creadas</li>
+                        <li>24 mentores activos</li>
+                    </ul>
+                </div>
+            </div>
+       
+            <div class="imagenApoyoExplicacion">
+                <p>Alba Martínez 🇪🇸
+
+                    Estudiante USAL - Fundó GreenTech
+
+                    💰 €35K financiamiento • 4 meses
+                </p>
+            </div>
+        </section>
+
+        <section id="bibliotecaProyectos" aria-labelledby="biblioteca">
+            <div class="cabecera">
+                <h2 id="biblioteca">Biblioteca de <span>Proyectos</span></h2>
+                <p>Descubre startups creadas por estudiantes universitarios de Castilla y León. Inspírate, conecta y colabora con el próximo unicornio de nuestra región.</p>
+            </div>
+            <div id="formularioBusqueda">
+                <form id="busquedaProyectos">
+                    <label for="criterioBusqueda"></label>
+                    <input type="text" id="criterioBusqueda">
+                    <label for="sectores">Sectores</label>
+                    <select name="sectores" id="sectores">
+                        <option value="todos">Todos los sectores</option>
+                        <option value="Sostenibilidad">Sostenibilidad</option>
+                        <option value="Tecnología">Tecnología</option>
+                        <option value="Salud">Salud</option>
+                        <option value="Fintech">FinTech</option>
+                        <option value="Agritech">AgriTech</option>
+                        <option value="Turismotech">Turismoech</option>
+                        <option value="FoodTech">FoodTech</option>
+                        <option value="EdTech">EdTech</option>
+                        <option value="CleanTech">CleanTech</option>
+                    </select>
+                    <label for="etapas">Etapa</label>
+                    <select name="etapa" id="etapa">
+                        <option value="todas">Todas las etapas</option>
+                        <option value="MPV">MVP</option>
+                        <option value="Crecimiento">Crecimiento</option>
+                        <option value="Expansion">Expansión</option>
+                        <option value="Prototipo">Prototipo</option>
+                        <option value="Idea">Idea</option>
+                    </select>
+                </form>
+            </div>
+            <div id="listadoProyectos">
+                <div id="proyectoDestacado"></div>
+                <div class="proyecto">Tecnología
+                    Crecimiento
+                    StudyValladolid AI
+                    Asistente de inteligencia artificial especializado en ayudar a estudiantes universitarios de Castilla y León con sus estudios. Personaliza técnicas de estudio según el perfil académico y las asignaturas específicas de cada universidad de la región.
+
+
+                    156
+                    3.456
+                    Usuarios
+                    €28.900
+                    Funding
+                    +94%
+                    Crecimiento
+                    MFL
+                    NRG
+                    UVa - Valladolid
+
+                </div>
+                <div class="proyecto"></div>
+                <div class="proyecto"></div>
+                <div class="proyecto"></div>
+                <div class="proyecto"></div>
+                <button>Cargar más proyectos</button>
+            </div>
+        </section>
+
+        <section id="recursosEmprendedores" aria-labelledby="recursos">
+            <div class="cabecera">
+                <h2 id="recursos">Recursos para <span>Emprendedores</span></h2>
+                <p>Guías, plantillas y herramientas especializadas para el ecosistema emprendedor español.</p>
+            </div>
+            <div id="listadoRecursos">
+                <div class="recurso">Guías de Financiación
+                    Todo sobre ENISA, ICO, CDTI y ayudas autonómicas
+
+                    ENISA
+                    ICO
+                    CDTI
+                </div>
+                <div class="recurso"></div>
+                <div class="recurso"></div>
+                <div class="recurso"></div>
+            </div>
+        </section>
+        <section id="eventosOportuniades" aria-labelledby="eventos">
+            <div class="cabecera">
+                <h2 id="eventos">Eventos y <span>Oportunidades</span></h2>
+                <p>Hackathons, pitch competitions y eventos de networking en universidades españolas.</p>
+            </div>
+            <div id="listadoEventos">
+                <div class="evento"></div>
+                <div class="evento"></div>
+                <div class="evento"></div>
+            </div>
+        </section>
+
+        <section id="ultimasNoticias" aria-labelledby="noticias">
+            <div class="cabecera">
+                <h2>Últimas <span>Noticias</span></h2>
+                <p>Últimas <span>Noticias</span></p>
+            </div>
+            <div id="listadoNoticias">
+                <div class="noticia"></div>
+                <div class="noticia"></div>
+                <div class="noticia"></div>
+            </div>
+        </section>
+        <section id="redMentores" aria-labelledby="mentores">
+            <div class="cabecera">
+                <h2>Red de <span>Mentores</span></h2>
+                <p>Conecta con expertos del ecosistema emprendedor de Castilla y León que te guiarán en tu viaje.</p>
+            </div>
+            <div id="listadoMentores">
+                <div class="mentor"></div>
+                <div class="mentor"></div>
+                <div class="mentor"></div>
+            </div>
+        </section>
+        <section id="encuentraEquipo" aria-labelledby="equipo">
+            <div class="cabecera">
+                <h2>Encuentra tu<span>Equipo</span></h2>
+                <p>Conecta con estudiantes complementarios para formar el equipo perfecto.</p>
+            </div>
+            <p>Próximamente: Sistema de Team Building</p>
+        </section>
+        <section id="generadorBusinessCanvas" aria-labelledby="generador">
+            <div class="cabecera">
+                <h2>Generador de <span>Business Canvas</span></h2>
+                <p>Crea tu modelo de negocio con nuestra herramienta interactiva.</p>
+            </div>
+            <p>Próximamente: Generador de Business Model Canvas</p>
+        </section>
+    </main>
+    <footer>
+        <p>EmprendeU <span>La plataforma de emprendimiento universitario de Castilla y León</span></p>
+        <nav aria-label="Resumen Navegación">
+            <p>Plataforma</p>
+            <ul>
+                <li>
+                    <a href="#">Biblioteca de Proyectos</a>
+                    <a href="#">Recursos</a>
+                    <a href="#">Eventos</a>
+                    <a href="#">Mentores</a>
+                </li>
+            </ul>
+            <p>Comunidad</p>
+            <ul>
+                <li>
+                    <a href="#">Universidades</a>
+                    <a href="#">Estudiantes</a>
+                    <a href="#">Alumni</a>
+                    <a href="#">Profesores</a>
+                </li>
+            </ul>
+            <p>Soporte</p>
+            <ul>
+                <li>
+                    <a href="#">Centro de ayuda</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Declaración accesibilidad</a>
+                    <a href="#">Privacidad</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <p> © 2024 EmprendeU • Todos los derechos reservados </p>
+            <div>Redes sociales</div>
+        </div>
+    </footer>
+</body>
+</html>
