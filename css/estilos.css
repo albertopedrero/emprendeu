@@ -1,8 +1,9 @@
 body {
     padding: 0;
     color: var(--texto-secundario);
-    max-width: 1080px;
-    margin: 0 auto;
+
+    font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+
 }
 
 :root{
@@ -12,17 +13,52 @@ body {
     --texto-footer: #B7C0D2;
     --fondo-principal: #FFFFFF;
     --fondo-secundario: #F6F7FA;
+    --fondo-terciario: #F9FAFC;
     --fondo-footer: #000000;
+
+
+    --featured-bg: #10B981;
+    --featured-color: #FFFFFF;
+    
+    --sustainability-bg: #ECFDF5;
+    --sustainability-border: #A7F3D0;
+    --sustainability-color: #059669;
+
+    --card-bg: #FFFFFF;
+    --font-color-dark: #212121;
+    --font-color-medium: #616161;
+    --font-color-light: #757575;
+    --border-radius: 24px;
+    --padding: 24px;
+    --shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+    
+    --tech-bg: #F0F9FF;
+    --tech-border: #B3E5FC;
+    --tech-color: #0288D1;
+
+    --growth-bg: #F3E5F5;
+    --growth-border: #CE93D8;
+    --growth-color: #8E24AA;
+
+    --positive-color: #388E3C;
+    --avatar-bg: #F5F5F5;
+
+}
+
+.visuallyHidden {
+    display: none;
 }
 
 header {
-    border-bottom: 1px solid var(--texto-secundario);
+max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--texto-footer);
     display: flex;
     justify-content: space-between;
 }
 
-header .logo {
-    font-size: 2.5rem;
+header .logo img {
+    width: 225px;
 }
 header .logo span{
     display: block;
@@ -31,33 +67,325 @@ header .logo span{
 
 header nav ul li{
     display: inline;
+    padding: 1rem;
+    font-size: 1.1rem;
 }
 
+header nav ul li a{
+    color: var(--texto-secundario);
+    text-decoration: none;
+}
+
+.datosLogin {
+    font-size: 0.9rem;
+}
 .datosLogin span{
     display:block;
 }
+.datosLogin .categoria {
+    color: var(--tech-color);
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size:1.5rem;
+    line-height: 2.2rem;
+}
+
+
 section {
     padding: 2rem;
 }
+h1 {
+    font-size: 3.5rem;
+    line-height: 2.5rem;
+    color: var(--texto-primario)
+}
+
+h1 span{
+    color: var(--tech-color)
+}
+#explicacion {
+    display: flex;
+}
+
+#explicacion button {
+    padding: 1.2rem 2rem;
+    background-color: var(--texto-destacado);
+    color: var(--texto-primario);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    border: none;
+}
+.datosGenerales ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.datosGenerales li {
+    color: var(--tech-color);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.datosGenerales li span{
+    display: block;
+    color: var(--texto-primario);
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.imagenApoyoExplicacion img {
+    width: 90%;
+    border-radius: 2rem;
+    margin-left: 4rem;
+}
 h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
+    color: var(--texto-primario)
+}
+h2 span {
+    color: var(--tech-color)
 }
 .cabecera p {
     text-align: center;
-    width: 50%;
-    margin: 0 auto;
+    width: 60%;
+    margin: 0 auto 2rem auto;
+}
+#explicacion {
+    background-color: var(--fondo-terciario);
 }
 #bibliotecaProyectos, #eventosOportunidades, #redMentores {
     background-color: var(--fondo-secundario);
 }
 
+#formularioBusqueda {
+    background-color: var(--fondo-principal);
+    width: 90%;
+    border: 1px solid var(--texto-footer);
+    border-radius: 1rem; 
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+#formularioBusqueda input, select {
+    padding: 1.3rem;
+    border-radius: 10px;
+    border-color: var(--texto-footer);
+    font-size: 1.2rem;
+    color: var(--texto-secundario);
+}
+
+#formularioBusqueda input {
+    width: 500px;
+}
+#busquedaProyectos{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 footer {
     background-color: var(--fondo-footer);
-    color: var(--texto-footer)
+    color: var(--texto-footer);
 }
+
 
 footer a {
     color: var(--texto-footer);
     text-decoration: none;
+}
+
+footer #contenidoFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+footer #copyright {
+    padding: 3rem;
+}
+
+.tag-featured, .tag-sustainability, .tag-mvp {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tag-featured {
+    background-color: var(--featured-bg);
+    color: var(--featured-color);
+    border: 1px solid var(--featured-bg);
+}
+
+.tag-sustainability {
+    background-color: var(--sustainability-bg);
+    border-color: var(--sustainability-border);
+    color: var(--sustainability-color);
+}
+
+.tag-mvp {
+    /* Reutilizamos el estilo de Sostenibilidad pero con otro color si fuera necesario */
+    background-color: var(--sustainability-bg);
+    border-color: var(--sustainability-border);
+    color: var(--sustainability-color);
+}
+
+
+/* === NUEVOS ESTILOS PARA LA TARJETA HORIZONTAL === */
+
+/* 1. Estilos para el contenedor principal horizontal */
+.card.card-horizontal {
+    flex-direction: row; /* Cambia la dirección del flex a horizontal */
+    max-width: 800px;
+    padding: 0; /* Quitamos el padding para que la imagen ocupe todo el borde */
+    gap: 0;
+}
+
+/* 2. Estilos para la imagen de la izquierda */
+.card-image {
+    width: 300px; /* Ancho fijo para la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border-radius: var(--border-radius) 0 0 var(--border-radius); /* Redondea solo las esquinas izquierdas */
+}
+
+/* 3. Estilos para el contenedor del contenido de la derecha */
+.card-content {
+    flex: 1; /* Permite que este contenedor ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    padding: var(--padding); /* Aplicamos el padding aquí en lugar de en la tarjeta */
+    gap: 16px;
+}
+
+/* 4. Pequeño ajuste para que el cuerpo ocupe más espacio si es necesario */
+.card-horizontal .card-body {
+    flex-grow: 1;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    box-shadow: var(--shadow);
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre secciones */
+}
+
+/* === CABECERA: ETIQUETAS Y LIKES === */
+.card-header, .card-footer, .likes, .info, .location {
+    display: flex;
+    align-items: center;
+}
+
+.card-header, .card-footer {
+    justify-content: space-between;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+}
+
+.tags span {
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.tag-technology {
+    background-color: var(--tech-bg);
+    border-color: var(--tech-border);
+    color: var(--tech-color);
+}
+
+.tag-growth {
+    background-color: var(--growth-bg);
+    border-color: var(--growth-border);
+    color: var(--growth-color);
+}
+
+.likes {
+    color: var(--font-color-light);
+    font-weight: 500;
+    gap: 6px;
+}
+
+/* === CUERPO: TÍTULO Y DESCRIPCIÓN === */
+.card-body h2 {
+    font-size: 22px;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.card-body p {
+    margin: 0;
+    color: var(--font-color-medium);
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* === ESTADÍSTICAS === */
+.card-stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.card-stats p {
+    margin: 0;
+}
+
+.card-stats p:first-child { /* Valor numérico */
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.card-stats p:last-child { /* Etiqueta (Usuarios, Funding, etc.) */
+    font-size: 14px;
+    color: var(--font-color-light);
+}
+
+.positive-growth {
+    color: var(--positive-color);
+}
+
+
+/* === FOOTER: INFO Y ENLACE === */
+.info {
+    gap: 8px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--avatar-bg);
+    color: var(--font-color-light);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.location {
+    gap: 4px;
+    color: var(--font-color-light);
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.card-footer a, .card-footer svg {
+    color: var(--font-color-light);
 }

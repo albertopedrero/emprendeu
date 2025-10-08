@@ -4,48 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EmprendeU - De la idea al demo day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://kit.fontawesome.com/2708d8e025.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="saltarNavegacion">Saltar navegación</div>
     <header>
-        <div class="logo">EmprendeU <span>de la idea al demo day</span></div>
+        <div class="logo">
+            <img src="./img/logo.png" alt="EmprendeU - De la idea al demo day">      
+        </div>
         <div>
             <nav aria-label="Principal">
                 <ul>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Recursos</a></li>
-                    <li><a href="#">Eventos</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Mentores</a></li>
+                    <li><a href="#"><i class="fa-solid fa-folder-open"></i>Proyectos</a></li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i>Recursos</a></li>
+                    <li><a href="#"><i class="fa-solid fa-calendar"></i>Eventos</a></li>
+                    <li><a href="#"><i class="fa-solid fa-newspaper"></i>Noticias</a></li>
+                    <li><a href="#"><i class="fa-solid fa-people-arrows"></i>Mentores</a></li>
                 </ul>
             </nav>
         </div>
         <div class="datosLogin">
             <p>Juan Estudiante
-                <span class="universidad">UPSA - Ingeniería</span>
-                <span class="catetgoria">Emprendedor Activo</span></p>
+                <span class="universidad">🎓 UPSA - Ingeniería</span>
+                <span class="categoria">Emprendedor Activo</span></p>
         </div>
     </header>
     <main id="principal">
-        <section class="explicacion">
+        <section id="explicacion">
             <div>
                 <h1>Transforma tu <span>idea</span> en tu próximo <span>éxito</span></h1>
                 <p>
                     Conecta con la comunidad emprendedora universitaria de Castilla y León. Encuentra mentores, colabora en proyectos y lleva tu startup desde la idea hasta el demo day con resultados reales.
                 </p>
-                <button>Comenzar gratis</button>
+                <button>Comenzar gratis <i class="fa-solid fa-arrow-right"></i> </button>
             
                 <div class="datosGenerales">
                     <ul>
-                        <li>1.420 estudiantes de CyL</li>
-                        <li>87 startups creadas</li>
-                        <li>24 mentores activos</li>
+                        <li>1.420 <span>estudiantes de CyL</span></li>
+                        <li>87 <span>startups creadas</span></li>
+                        <li>24 <span>mentores activos</span></li>
                     </ul>
                 </div>
             </div>
        
             <div class="imagenApoyoExplicacion">
+                <img src="./img/imagen-explicacion.png" alt="">
                 <p>Alba Martínez 🇪🇸
 
                     Estudiante USAL - Fundó GreenTech
@@ -62,56 +69,148 @@
             </div>
             <div id="formularioBusqueda">
                 <form id="busquedaProyectos">
-                    <label for="criterioBusqueda"></label>
-                    <input type="text" id="criterioBusqueda">
-                    <label for="sectores">Sectores</label>
-                    <select name="sectores" id="sectores">
-                        <option value="todos">Todos los sectores</option>
-                        <option value="Sostenibilidad">Sostenibilidad</option>
-                        <option value="Tecnología">Tecnología</option>
-                        <option value="Salud">Salud</option>
-                        <option value="Fintech">FinTech</option>
-                        <option value="Agritech">AgriTech</option>
-                        <option value="Turismotech">Turismoech</option>
-                        <option value="FoodTech">FoodTech</option>
-                        <option value="EdTech">EdTech</option>
-                        <option value="CleanTech">CleanTech</option>
-                    </select>
-                    <label for="etapas">Etapa</label>
-                    <select name="etapa" id="etapa">
-                        <option value="todas">Todas las etapas</option>
-                        <option value="MPV">MVP</option>
-                        <option value="Crecimiento">Crecimiento</option>
-                        <option value="Expansion">Expansión</option>
-                        <option value="Prototipo">Prototipo</option>
-                        <option value="Idea">Idea</option>
-                    </select>
+                    <div>
+                        <label for="criterioBusqueda"></label>
+                        <input type="text" id="criterioBusqueda" placeholder="Buscar proyectos, universidades, sectores...">
+                    </div>
+                    <div>
+                        <label for="sectores" class="visuallyHidden">Sectores</label>
+                        <select name="sectores" id="sectores">
+                            <option value="todos">Todos los sectores</option>
+                            <option value="Sostenibilidad">Sostenibilidad</option>
+                            <option value="Tecnología">Tecnología</option>
+                            <option value="Salud">Salud</option>
+                            <option value="Fintech">FinTech</option>
+                            <option value="Agritech">AgriTech</option>
+                            <option value="Turismotech">Turismoech</option>
+                            <option value="FoodTech">FoodTech</option>
+                            <option value="EdTech">EdTech</option>
+                            <option value="CleanTech">CleanTech</option>
+                        </select>
+
+                    </div>
+                    
+                    <div>
+                        <label for="etapas" class="visuallyHidden">Etapa</label>
+                        <select name="etapa" id="etapa">
+                            <option value="todas">Todas las etapas</option>
+                            <option value="MPV">MVP</option>
+                            <option value="Crecimiento">Crecimiento</option>
+                            <option value="Expansion">Expansión</option>
+                            <option value="Prototipo">Prototipo</option>
+                            <option value="Idea">Idea</option>
+                        </select>
+                    </div>
+                    
                 </form>
             </div>
             <div id="listadoProyectos">
                 <div id="proyectoDestacado"></div>
-                <div class="proyecto">Tecnología
-                    Crecimiento
-                    StudyValladolid AI
-                    Asistente de inteligencia artificial especializado en ayudar a estudiantes universitarios de Castilla y León con sus estudios. Personaliza técnicas de estudio según el perfil académico y las asignaturas específicas de cada universidad de la región.
+                
 
+                <article class="card card-horizontal">
+        
+        <img class="card-image" src="./img/proyecto-destacado.png"" alt="">
 
-                    156
-                    3.456
-                    Usuarios
-                    €28.900
-                    Funding
-                    +94%
-                    Crecimiento
-                    MFL
-                    NRG
-                    UVa - Valladolid
+        <div class="card-content">
 
+            <header class="card-header">
+                <div class="tags">
+                    <span class="tag-featured">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                        Destacado
+                    </span>
+                    <span class="tag-sustainability">Sostenibilidad</span>
+                    <span class="tag-mvp">MVP</span>
                 </div>
-                <div class="proyecto"></div>
-                <div class="proyecto"></div>
-                <div class="proyecto"></div>
-                <div class="proyecto"></div>
+                <div class="likes">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    <span>187</span>
+                </div>
+            </header>
+
+            <main class="card-body">
+                <h2>GreenTech Salamanca</h2>
+                <p>Marketplace de productos sostenibles conectando estudiantes de Castilla y León con pequeños productores ecológicos locales. Una plataforma que facilita el acceso a productos de kilómetro cero para la comunidad universitaria de toda la...</p>
+            </main>
+
+            <section class="card-stats">
+                <div>
+                    <p>1.847</p>
+                    <p>Usuarios</p>
+                </div>
+                <div>
+                    <p>€35.200</p>
+                    <p>Funding</p>
+                </div>
+                <div>
+                    <p class="positive-growth">+78%</p>
+                    <p>Crecimiento</p>
+                </div>
+            </section>
+
+            <footer class="card-footer">
+                <div class="info">
+                    <span class="avatar">AMH</span>
+                    <span class="avatar">DSP</span>
+                    <span class="avatar">CGR</span>
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>USAL - Salamanca</span>
+                    </div>
+                </div>
+                <a href="#" aria-label="Abrir enlace externo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+            </footer>
+
+        </div> </article>
+                <article class="card">
+                    <header class="card-header">
+                        <div class="tags">
+                            <span class="tag-technology">Tecnología</span>
+                            <span class="tag-growth">Crecimiento</span>
+                        </div>
+                        <div class="likes">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                            <span>156</span>
+                        </div>
+                    </header>
+
+                    <main class="card-body">
+                        <h2>StudyValladolid AI</h2>
+                        <p>Asistente de inteligencia artificial especializado en ayudar a estudiantes...</p>
+                    </main>
+
+                    <section class="card-stats">
+                        <div>
+                            <p>3.456</p>
+                            <p>Usuarios</p>
+                        </div>
+                        <div>
+                            <p>€28.900</p>
+                            <p>Funding</p>
+                        </div>
+                        <div>
+                            <p class="positive-growth">+94%</p>
+                            <p>Crecimiento</p>
+                        </div>
+                    </section>
+
+                    <footer class="card-footer">
+                        <div class="info">
+                            <span class="avatar">MFL</span>
+                            <span class="avatar">NRG</span>
+                            <div class="location">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span>UVa - Valladolid</span>
+                            </div>
+                        </div>
+                        <a href="#" aria-label="Abrir enlace externo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </footer>
+                </article>
                 <button>Cargar más proyectos</button>
             </div>
         </section>
@@ -184,37 +283,44 @@
         </section>
     </main>
     <footer>
-        <p>EmprendeU <span>La plataforma de emprendimiento universitario de Castilla y León</span></p>
-        <nav aria-label="Resumen Navegación">
-            <p>Plataforma</p>
-            <ul>
-                <li>
-                    <a href="#">Biblioteca de Proyectos</a>
-                    <a href="#">Recursos</a>
-                    <a href="#">Eventos</a>
-                    <a href="#">Mentores</a>
-                </li>
-            </ul>
-            <p>Comunidad</p>
-            <ul>
-                <li>
-                    <a href="#">Universidades</a>
-                    <a href="#">Estudiantes</a>
-                    <a href="#">Alumni</a>
-                    <a href="#">Profesores</a>
-                </li>
-            </ul>
-            <p>Soporte</p>
-            <ul>
-                <li>
-                    <a href="#">Centro de ayuda</a>
-                    <a href="#">Contacto</a>
-                    <a href="#">Declaración accesibilidad</a>
-                    <a href="#">Privacidad</a>
-                </li>
-            </ul>
-        </nav>
-        <div>
+        <div id="contenidoFooter">
+            <p>EmprendeU <span>La plataforma de emprendimiento universitario de Castilla y León</span></p></div>
+            <div>
+                <nav aria-label="Resumen Navegación">
+                    <p>Plataforma</p>
+                    <ul>
+                        <li>
+                            <a href="#">Biblioteca de Proyectos</a>
+                            <a href="#">Recursos</a>
+                            <a href="#">Eventos</a>
+                            <a href="#">Mentores</a>
+                        </li>
+                    </ul>
+                    <p>Comunidad</p>
+                    <ul>
+                        <li>
+                            <a href="#">Universidades</a>
+                            <a href="#">Estudiantes</a>
+                            <a href="#">Alumni</a>
+                            <a href="#">Profesores</a>
+                        </li>
+                    </ul>
+                    <p>Soporte</p>
+                    <ul>
+                        <li>
+                            <a href="#">Centro de ayuda</a>
+                            <a href="#">Contacto</a>
+                            <a href="#">Declaración accesibilidad</a>
+                            <a href="#">Privacidad</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+        
+        <div id="copyright">
             <p> © 2024 EmprendeU • Todos los derechos reservados </p>
             <div>Redes sociales</div>
         </div>
